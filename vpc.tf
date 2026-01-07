@@ -18,7 +18,7 @@ resource "aws_subnet" "demosubnet-1" {
 
 resource "aws_subnet" "demosubnet-2" {
   vpc_id = aws_vpc.demovpc.id
-  cidr_block = "10.12.20.0/24"
+  cidr_block = "10.12.2.0/24"
   map_public_ip_on_launch = true
   availability_zone = "ap-south-1b"
   tags = {
