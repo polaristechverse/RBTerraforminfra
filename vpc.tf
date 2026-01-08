@@ -25,3 +25,10 @@ resource "aws_subnet" "demosubnet-2" {
     "Name" = "DemoGIT-Subnet-2"
   }
 }
+
+resource "aws_internet_gateway" "DemoIGW" {
+  vpc_id = aws_vpc.demovpc.id
+  tags = {
+    Name = "DemoGIT-IGW"
+  }
+}
